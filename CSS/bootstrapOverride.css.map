@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,2eAA2hB,CACvhB,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,GAAG,CACf,aAAa,CAAE,GAAG,CAClB,YAAY,CAAE,GAAG",
+"sources": ["bootstrapOverride.scss"],
+"names": [],
+"file": "bootstrapOverride.css"
+}
