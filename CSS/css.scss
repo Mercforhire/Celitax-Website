@@ -175,7 +175,7 @@ main
 
 .appLinkWrapOuter
 {
-    margin-top: 20px;
+    margin-top: 5px;
     max-width: 100%;
     height: 45px;
     text-align: center;
@@ -214,25 +214,26 @@ main
 .scrollButtonOutline
 {
     position: relative;
-    width: 40px;
+    width: 30px;
     height: 40px;
     border-color: white;
+    border-width: 2px;
     border-style: solid;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 15px 15px 15px 15px;
     margin-left: auto;
     margin-right: auto;
     bottom: 10px;
+    cursor: pointer;
 }
 
 .scrollButton
 {
     position: relative;
     width: auto;
-    height: 25px;
+    height: 20px;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    margin-top: 3px;
-    cursor: pointer;
+    margin-top: 6px;
 }
 
 .socialImgTop
@@ -474,7 +475,7 @@ main
 {
     .forthSectionWrap
     {
-        height: 1420px;
+        height: 1650px;
     } 
 }
 
@@ -504,7 +505,7 @@ main
 {
     .pagesContainerOuterSmall
     {
-        height: 450px;
+        height: 550px;
     } 
 }
 
@@ -527,6 +528,14 @@ main
     {
         margin-top: 50px;
     } 
+}
+
+.pagesTextTitle
+{
+    margin-top: 20px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    font-size: 18px;
 }
 
 .pagesText
@@ -580,6 +589,62 @@ main
     color: white;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.textFieldAndButtonContainer
+{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    top: 10px; left: 0; bottom: 0; right: 0;
+}
+
+#emailSubmttionField
+{
+    width: 300px;
+    height: 35px;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+    background: transparent;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+@media screen and (max-width: 767px) 
+{
+    .textFieldAndButtonContainer
+    {
+        width: 270px;
+    }
+
+    #emailSubmttionField
+    {
+        width: 180px;
+    }
+}
+
+#submit_email_button
+{
+    float: right;
+    width: 80px;
+    height: 35px;
+    z-index:2;
+    text-align: center;
+    top: 260px;
+    border-radius: 5px;
+    background-color: white;
+    line-height: 35px;
+    color: #78be57;
+    cursor: pointer;
+}
+
+#submit_email_button:hover
+{
+    background: lightgrey;
 }
 
 //Sixth section:
@@ -679,16 +744,8 @@ main
 .contactSectionWrap
 {
     width: 100%;
-    height: 300px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ec51+0,78be57+100 */
-    background: #b4ec51; /* Old browsers */
-    background: -moz-linear-gradient(top,  #b4ec51 0%, #78be57 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ec51), color-stop(100%,#78be57)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #b4ec51 0%,#78be57 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #b4ec51 0%,#78be57 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #b4ec51 0%,#78be57 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #b4ec51 0%,#78be57 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ec51', endColorstr='#78be57',GradientType=0 ); /* IE6-9 */
+    height: 350px;
+    background: #78be57;
     opacity: 1;
     display: none;
 }
@@ -705,7 +762,7 @@ main
 {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
 .contactInfoContainer
@@ -713,68 +770,118 @@ main
     position: absolute;
     height: 210px;
     width: 205px;
-    text-align: center;
+    text-align: left;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
+.contactInfoTitle
+{
+    color: white;
+    font-size: 20px;
+}
 .contactInfoText
 {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .contactFieldsWrap
 {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
+}
+
+@media screen and (max-width: 767px)
+{
+    .contactInfoWrap
+    {
+        height: 300px;
+    }
+
+    .contactFieldsWrap
+    {
+        height: 300px;
+    }
 }
 
 .contactFieldsContainer
 {
-    position: relative;
+    position: absolute;
     width: 80%;
-    height: 100%;
+    height: 300px;
     color: white;
-    font-size: 16px;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
     margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@media screen and (max-width: 767px)
+{
+    .contactFieldsContainer
+    {
+        text-align: center;
+    } 
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
 }
 
 #nameField
 {
+    position: relative;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 20px;
-    color: black;
-    border-radius: 5px;
-    border-style: inset;
+    color: white;
+    background: transparent;
+    border-radius: 3px;
+    border-style: solid;
     border-width: 1px;
+    border-color: white;
 }
 
 #emailField
 {
+    position: relative;
     width: 100%;
     box-sizing: border-box;
     margin-top: 10px;
-    color: black;
-    border-radius: 5px;
-    border-style: inset;
+    background: transparent;
+    color: white;
+    border-radius: 3px;
+    border-style: solid;
     border-width: 1px;
+    border-color: white;
 }
 
 #commentField
 {
-    width: 70%;
+    position: relative;
+    width: 100%;
     box-sizing: border-box;
     float: left;
-    height: 150px;
+    background: transparent;
+    height: 120px;
     margin-top: 10px;
-    color: black;
-    border-radius: 5px;
-    border-style: inset;
+    color: white;
+    border-radius: 3px;
+    border-style: solid;
     border-width: 1px;
+    border-color: white;
     resize: none;
 }
 
@@ -788,18 +895,31 @@ main
 
 #submit_button
 {
-    position: absolute;
-    width: 100px;
-    width: 80px;
+    position: relative;
+    display: block;
+    width: 200px;
     height: 35px;
-    z-index:2;
     text-align: center;
-    top: 260px;
     border-radius: 5px;
     background-color: white;
     line-height: 35px;
     color: #78be57;
     cursor: pointer;
+    margin-top:120px;
+}
+
+@media screen and (max-width: 767px)
+{
+    #commentField
+    {
+        width: 100%;
+    } 
+    
+    #submit_button
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 #submit_button:hover
