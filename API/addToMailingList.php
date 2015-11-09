@@ -1,6 +1,5 @@
 <?php
-require_once 'API/Config.php';
-require_once 'API/DbHandler.php';
+require_once 'DbHandler.php';
 
 if (isset($_GET['email']))
 {

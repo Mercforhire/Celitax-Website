@@ -38,12 +38,23 @@ main
     min-height: 500px;
 }
 
-//Negative top margin and top 50% to keep div always centered on screen horizontally. 
+
 .firstSectionContentWrap
 {
     position: absolute;
     width: 100%;
     height: 350px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.firstSectionContentWrap2
+{
+    position: absolute;
+    width: 100%;
+    height: 50px;
     text-align: center;
     color: white;
     margin: auto;

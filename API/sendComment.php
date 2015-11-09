@@ -1,6 +1,6 @@
 <?php
 
-require_once 'API/EmailHandler.php';
+require_once 'EmailHandler.php';
 
 $emailer = new EmailHandler();
 

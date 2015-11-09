@@ -8,6 +8,55 @@ $(document).ready(function(){
     });
 }); 
 
+function submitNewPassword()
+{
+    var password = $('#password').val();
+    var password2 = $('#password2').val();
+    
+    //make sure all 2 passwords are non-empty
+    if ($('#password').val().length >= 6 && $('#password2').val().length >= 6 && password == password2) 
+    {
+        //proceed
+        var xmlhttp = new XMLHttpRequest();
+
+        var data = new FormData();
+
+        data.append('tokenid', tokenid);
+        data.append('password', password);
+        
+        xmlhttp.onreadystatechange = function()
+        {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+            {
+                var response = xmlhttp.responseText;
+
+                console.log(response);
+                
+                if (response == 0)
+                {
+                    //success
+                    $('#successLabel').show();
+                    $('#errorLabel').hide();
+                    $('#change_password_button').hide();
+                }
+                else
+                {
+                    $('#errorLabel2').show();
+                    $('#change_password_button').hide();
+                }
+            }
+        };
+
+        xmlhttp.open("POST", "https://www.crave-n-save.ca/crave/Celitax-WebAPI/v1/setNewPassword.php", true);
+        xmlhttp.send(data);
+    }
+    else
+    {
+        //display an error message
+        $('#errorLabel').show();
+    }
+}
+
 function contactClicked()
 {
     console.log("Pressed Contact");
@@ -68,7 +117,7 @@ function submitComment()
         }
     };
 
-    xmlhttp.open("POST", "sendComment.php", true);
+    xmlhttp.open("POST", "API/sendComment.php", true);
     xmlhttp.send(data);
 }
 
@@ -96,7 +145,7 @@ function submitEmail()
             }
         };
 
-        xmlhttp.open("GET", "addToMailingList.php?email=" + email, true);
+        xmlhttp.open("GET", "API/addToMailingList.php?email=" + email, true);
         xmlhttp.send();
     }
 }
