@@ -101,7 +101,6 @@ echo <<< ERROR
 ERROR;
 }
 ?>
-                
                 <div class="firstSectionContentWrap3">
                     <div id="resetLabel">Password has been changed.</div>
                 </div>
