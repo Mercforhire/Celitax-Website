@@ -1,28 +1,7 @@
-<?php
-$tokenid = "";
-
-$tokenInvalid = false;
-
-if (isset($_GET['tokenid']))
-{
-    $tokenid = $_GET['tokenid'];
-
-echo <<< TOKENID
-        <script type="text/javascript">
-            var tokenid = "$tokenid";
-        </script>
-TOKENID;
-}
-else
-{
-    $tokenInvalid = true;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head profile="http://www.w3.org/2005/10/profile">
-        <title>Reset Password</title>
+        <title>About Us</title>
         <!-- View Port to fill mobile device screens -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Latest compiled and minified CSS -->
@@ -32,7 +11,7 @@ else
         <!-- Bootstrap Override Styling  -->
         <link rel="stylesheet" href="CSS/bootstrapOverride.css">  
         <!-- Personal Styling CSS file -->
-        <link rel="stylesheet" href="CSS/reset.css"> 
+        <link rel="stylesheet" href="CSS/about.css"> 
         <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -55,9 +34,6 @@ else
         <!-- Landing Page, 100% height until user scrolls page -->
         <main>
             <div id="firstGreenSection">   
-                <div id='firstGreenSectionBackground'>
-                                
-                </div>
                 <div class="firstGreenSectionHeaderWrap">
                     <div id="greenLogo">
                         <a href="./index.html"><img src="Images/CelitaxGreenLogo.png" width="90" height="33"></a>
@@ -66,43 +42,36 @@ else
                         <a href="./index.html"><div class="homeButton" id="topHomeButton">Home</div></a>
                     </div>
                 </div>
-<?php
-if (!$tokenInvalid)
-{
-echo <<< NORMAL
                 <div class="firstSectionContentWrap">
-                    <div id="resetLabel">Reset Password</div>
+                    <div id="logo"><img src="Images/round_logo.png" width="85" height="85"></div>
+                    </br>
+                    <div id="titleLabel">About Us</div>
                     </br>
                     </br>
-                    <div class="textFieldLabel">Please Enter New Password</div>
-                    <input type="password" class="passwordField" id = "password" name = "password" placeholder="Password"/>
-                    </br>
-                    </br>
-                    <div class="textFieldLabel">Please Re-Enter New Password</div>
-                    <input type="password" class="passwordField" id = "password2" name = "password2" placeholder="Repeat Password"/>
-                    </br>
-                    <div class="textFieldLabel" id="errorLabel">Please make sure the password is at least 6 characters long and both fields match.</div>
-                    <div class="textFieldLabel" id="successLabel">Great, the password has been changed!</div>
-                    <div class="textFieldLabel" id="errorLabel2">Password Reset Session Expired or Invalid</div>
-                    </br>
-                    </br>
-                    <div id="change_password_button" onclick="submitNewPassword()">
-                        Change Password
+                    <div id="content">
+                        <b>Who I am:</b>
+                        <p>My name is Justin Gravelle, a 25-year-old accountant from Toronto, Canada who 
+happened to fall in love with a beautiful woman diagnosed with Celiac disease. 
+I have witnessed first hand the day-to-day hardships that a Celiac faces. Seeing 
+her suffer on a regular basis had taken its toll. I felt helpless, as all I could do was 
+comfort her. I needed to do more for her!</p>
+</br>
+<p>When she had mentioned the Gluten-Free tax claim, I instantly became intrigued. 
+Upon further research, very few Celiacs were taking advantage of this hidden gem, 
+and for obvious reasons. It is one giant pain in the butt! Nobody has the time or the 
+patience for complicated spreadsheets and tedious calculations. It hardly seemed 
+like a real "benefit" at all. With that said, CeliTax was born.</p>
+</br>
+<p>I promised her I would fix this issue, so myself, as well as my technical team worked 
+hard to bring all of you a much simpler, easier way to get the tax deduction you 
+deserve!</p>
+</br>
+Cheers.
+</br></br>
+<b><i>-Justin Gravelle</i></b>
+</br></br>
+CEO/Founder
                     </div>
-                </div>
-NORMAL;
-}
-else
-{
-echo <<< ERROR
-                <div class="firstSectionContentWrap2">
-                    <div id="resetLabel">Password Reset Session Invalid</div>
-                </div>
-ERROR;
-}
-?>
-                <div class="firstSectionContentWrap3">
-                    <div id="resetLabel">Password has been changed.</div>
                 </div>
             </div>
         </main>
@@ -137,6 +106,5 @@ ERROR;
         <script src="JS/jQuery.js"></script>
         <!-- Local bootstrap jQuery Import -->
         <script src="JS/bootstrap.js"></script>
-        <script src="JS/userJS.js"></script>
     </body>
 </html>

@@ -1,0 +1,327 @@
+@font-face 
+{
+    font-family: 'lato';
+    src: url('Lato-Regular.ttf');
+}
+
+@font-face 
+{
+    font-family: 'latoLight';
+    src: url('Lato-Light.ttf');
+}
+
+main
+{
+    display:block;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+}
+
+html, body
+{
+    height: 100%;
+    font-family: lato;
+}
+
+.firstGreenSectionHeaderWrap
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.firstSectionContentWrap
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    //background: greenyellow;
+}
+
+.firstSectionContent
+{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #78be57;
+}
+
+#titleLabel
+{
+    font-size: 30px;
+    color: white;
+}
+
+#amountLabel
+{
+    font-size: 60px;
+    color: white;
+}
+
+#viewDetailsButton
+{
+    position: relative;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.secondSectionContentWrap
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.secondSectionContent
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#chartContainer
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.tableHeader
+{
+    width: 100%;
+    height: 30px;
+}
+
+.tableRow
+{
+    width: 100%;
+    height: 40px;
+}
+
+.columnLabel1
+{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+    width: 65px;
+    height: 100%;
+    float: right;
+}
+
+.columnLabel2
+{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    width: 65px;
+    height: 100%;
+    float: right;
+}
+
+.columnLabel3
+{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+    width: 65px;
+    height: 100%;
+    float: right;
+}
+
+.categoryColorBox
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.categoryNameLabel
+{
+    display: inline-block;
+    font-size: 11px;
+    line-height: 20px;
+    width: 75px;
+    height: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.totalSpentLabel
+{
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 40px;
+    width: 65px;
+    height: 100%;
+    float: right;
+}
+
+.totalAvgLabel
+{
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 40px;
+    width: 65px;
+    height: 100%;
+    float: right;
+}
+
+.gfSavings
+{
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 40px;
+    width: 65px;
+    height: 100%;
+    float: right;
+}
+
+#greenLogo
+{
+    position: absolute;
+    height: 48px;
+    width: auto;
+    margin-top: 22px;
+    margin-left: 15px;
+}
+
+#containerBottomWhiteBorder 
+{
+    width: auto;
+    height: 48px;
+    margin-left: 110px;
+    margin-right: 42px;
+    border-bottom: 1px solid #78be57;
+}
+
+@media screen and (max-width: 767px)
+{
+    #containerBottomWhiteBorder
+    {
+        margin-right: 20px;
+    }
+}
+
+.homeButton
+{
+    width: 60px;
+    height: auto; 
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: #78be57;
+}
+
+#topHomeButton
+{
+    position: relative;
+    float: right;
+    top: 20px;
+}
+
+#bottomHomeButton
+{
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+//Footer
+footer
+{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 42px;
+    border-top: 1px solid #78be57;
+    background: white;
+    z-index: 10;
+}
+
+@media screen and (max-width: 767px) 
+{
+    footer
+    {
+        height: 84px;
+    } 
+}
+
+.copyRightText
+{
+    height: 42px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 42px;
+    line-height: 42px;
+    color: #78be57;
+}
+
+#copyRightTextMobile
+{
+    margin-left: 0px;
+    text-align: center;
+}
+
+.footerLinks
+{
+    height: 42px;
+    float: right;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+#footerLinksMobile
+{
+    float: left;
+    margin-left: 20px;
+}
+
+.socialMediaWrap
+{
+    float: right;
+}
+
+#socialMediaWrapMobile
+{
+    margin-right: 20px;
+}
+
+.socialImg
+{
+    text-align: center;
+    cursor: pointer;
+}

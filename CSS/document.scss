@@ -1,0 +1,200 @@
+@font-face 
+{
+    font-family: 'lato';
+    src: url('Lato-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'latoLight';
+    src: url('Lato-Light.ttf');
+}
+
+html, body, main
+{
+    height: calc(100% - 14px);
+    font-family: lato;
+}
+
+@media screen and (max-width: 767px) 
+{
+    html, body, main
+    {
+        height: calc(100% - 28px);
+    }
+}
+
+main
+{
+    min-height: 500px;
+    height: auto;
+}
+
+#firstGreenSection
+{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+
+.firstSectionContentWrap
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.firstGreenSectionHeaderWrap
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+#logo
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#titleLabel
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    color: #78be57;
+}
+
+#content
+{
+    font-size: 15px;
+}
+
+#greenLogo
+{
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 15px;
+    height: 48px;
+    width: auto;
+}
+
+#containerBottomWhiteBorder 
+{
+    width: auto;
+    height: 48px; 
+    margin-left: 110px;
+    margin-right: 42px;
+    border-bottom: 1px solid #78be57;
+}
+
+@media screen and (max-width: 767px) 
+{
+    #containerBottomWhiteBorder
+    {
+        margin-right: 20px;
+    } 
+}
+
+.homeButton 
+{
+    width: 60px;
+    height: auto; 
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: #78be57;
+}
+
+#topHomeButton 
+{
+    position: relative;
+    float: right;
+    top: 20px;
+}
+
+#bottomHomeButton 
+{
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+//Footer
+footer
+{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 42px;
+    border-top: 1px solid #78be57;
+    background: white;
+    z-index: 10;
+}
+
+@media screen and (max-width: 767px) 
+{
+    footer
+    {
+        height: 84px;
+    } 
+}
+
+.copyRightText
+{
+    height: 42px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 42px;
+    line-height: 42px;
+    color: #78be57;
+}
+
+#copyRightTextMobile
+{
+    margin-left: 0px;
+    text-align: center;
+}
+
+.footerLinks
+{
+    height: 42px;
+    float: right;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+#footerLinksMobile
+{
+    float: left;
+    margin-left: 20px;
+}
+
+.socialMediaWrap
+{
+    float: right;
+}
+
+#socialMediaWrapMobile
+{
+    margin-right: 20px;
+}
+
+.socialImg
+{
+    text-align: center;
+    cursor: pointer;
+}

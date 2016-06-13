@@ -56,6 +56,9 @@ function post(path, params, method)
         }
     }
 
+    var button = document.createElement("input");
+    button.setAttribute('type', "submit");
+    form.appendChild(button);
     document.body.appendChild(form);
     form.submit();
 }

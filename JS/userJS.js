@@ -68,15 +68,6 @@ function contactClicked()
     }, 700);
 }
 
-function aboutClicked()
-{
-    console.log("Pressed About");
-
-    $('html, body').animate({
-        scrollTop: $(".sixthSectionWrap").offset().top
-    }, 700);
-}
-
 function submitComment()
 {
     //get string from #nameField, #emailField, and #commentField

@@ -115,7 +115,7 @@ YEAR;
         <main>
             <div class="firstGreenSectionHeaderWrap">
                 <div id="greenLogo">
-                    <img src="Images/CelitaxGreenLogo.png" width="90" height="33">
+                    <a href="./index.html"><img src="Images/CelitaxGreenLogo.png" width="90" height="33"></a>
                 </div>
                 <div id='containerBottomWhiteBorder'>
                     <a href="./index.html"><div class="homeButton" id="topHomeButton">Home</div></a>
@@ -273,10 +273,10 @@ LOADINGDATA;
         <script src="JS/receipt_view.js"></script>
         
         <!-- Core JS file -->
-        <script src="JS/photoswipe.min.js"></script> 
+        <script src="JS/photoswipe.js"></script> 
 
         <!-- UI JS file -->
-        <script src="JS/photoswipe-ui-default.min.js"></script> 
+        <script src="JS/photoswipe-ui-default.js"></script> 
         
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
